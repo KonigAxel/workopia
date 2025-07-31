@@ -1,11 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create New Job</title>
-</head>
-<body>
+<x-layout>
+    <x-slot name="title">Create Job</x-slot>
+    
     <h1>Create New Jobs</h1>
-</body>
-</html>
+    <form action="/jobs" method="POST">
+        @csrf <!-- CSRF token for security -->
+        <input type="text" name="title" placeholder="Job Title">
+        <input type="text" name="description" placeholder="Job Description">
+        <button type="submit">Submit</button>
+    </form>
+</x-layout>
+

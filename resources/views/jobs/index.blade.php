@@ -1,12 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Job Listings</title>
-</head>
-<body>
-    <h1>{{$title}}</h1>
+<x-layout>
+    <h1>Available Jobs</h1>
     <!-- @if(!empty($jobs)) -->
         <p>Available jobs:</p>
     <!-- <ul>
@@ -30,6 +23,4 @@
         @endforelse
     </ul>
 
-
-</body>
-</html>
+</x-layout>
